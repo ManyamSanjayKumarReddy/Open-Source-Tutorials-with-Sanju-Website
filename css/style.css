@@ -47,7 +47,7 @@ section {
 
 .btn:hover {
   color: #fff;
-  background: #224bcf;
+  background: #5A20CB;
 }
 
 .heading {
@@ -93,7 +93,7 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 9%;
-  background: #224bcf;
+  background: #2827CC;
 }
 
 .header .logo {

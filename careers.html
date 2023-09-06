@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GZDMMZY2T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8GZDMMZY2T');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/images/Final Logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers </title>
+
+    <meta name="description"
+        content="Totelligence Solutions is an Startup Based Company which Provied E-Learning & Services on for Tech Industries.">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script id="convertful-api" src="https://app.convertful.com/Convertful.js?owner=60014" async></script>
+
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1289363677038298"
+        crossorigin="anonymous"></script>
+
+    <style>
+        /* Company Introduction Styles */
+        .company-intro {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-content {
+            padding: 20px;
+        }
+
+        .intro-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .intro-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .navbar ul {
+                text-align: center;
+            }
+
+            .navbar ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+
+        /* Careers Section Styles */
+        .careers {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-posting {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        
+
+        .job-posting h2 {
+            font-size: 26px;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .job-posting h3 {
+            font-size: 20px;
+            margin-top: 12px;
+            color: #555;
+        }
+
+        .job-posting ul {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .job-posting p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Button Styles */
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #258cd1;
+            transform: scale(1.05);
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .navbar ul {
+                text-align: center;
+            }
+
+            .navbar ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+/* Job Openings Section Styles */
+.job-openings {
+    background-color: #f0f0f0;
+    padding: 10px; /* Reduced padding */
+    margin: 10px; /* Reduced margin */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Wrap job openings to the next row */
+    justify-content: flex-start; /* Distribute job openings horizontally */
+}
+
+.job-opening {
+    width: calc(33.33% - 10px); /* Each job opening takes up 33.33% of the container width */
+    margin-bottom: 10px; /* Reduced margin */
+    padding: 10px; /* Reduced padding */
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block; /* Display job openings inline */
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 5px;
+}
+
+.job-opening:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-opening h2 {
+    font-size: 18px; /* Reduced font size for h2 */
+    margin-bottom: 4px; /* Further reduced margin */
+    color: #333;
+}
+
+.job-opening h3 {
+    font-size: 18px; /* Reduced font size for h3 */
+    margin-top: 6px; /* Further reduced margin */
+    color: #555;
+}
+
+.job-opening ul {
+    list-style: disc;
+    margin-left: 10px; /* Reduced margin */
+    margin-bottom: 6px; /* Further reduced margin */
+    font-size: 14px; /* Reduced font size for ul */
+}
+
+.job-opening p {
+    margin-top: 6px; /* Further reduced margin */
+    font-size: 16px; /* Reduced font size for p */
+}
+
+.job-opening a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.job-opening a:hover {
+    color: #258cd1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .job-opening {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0;
+    }
+
+    .job-openings {
+        justify-content: flex-start; /* Reset justify-content for smaller screens */
+    }
+
+    .job-opening h2 {
+        font-size: 18px; /* Reduced font size for h2 on smaller screens */
+    }
+
+    .job-opening h3 {
+        font-size: 16px; /* Reduced font size for h3 on smaller screens */
+    }
+
+    .job-opening ul {
+        font-size: 14px; /* Reduced font size for ul on smaller screens */
+    }
+
+    .job-opening p {
+        font-size: 14px; /* Reduced font size for p on smaller screens */
+    }
+}
+
+
+
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> </i> Totelligence Solutions </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="projects.html">Projects</a></li>
+
+                <li><a href="#">Company +</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Team</a></li>
+                        <li><a href="notifications.html">Notifications</a></li>
+                        <li><a href="terms and conditions.html">Terms and Conditions</a></li>
+                        <li><a href="pricacy.html">Privacy Policy</a></li>
+                        <li><a href="cancellation and refund policy.html">Refund Policy</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Company Introduction Section -->
+    <section class="company-intro">
+        <div class="intro-content">
+            <h2>Welcome to Totelligence Solutions Careers </h2>
+            <p>We're a Startup based company in E-Learning and Cutting Edge Solutions. Our mission is to create
+                innovative learning experiences and solve complex challenges.</p>
+            <p>If you're passionate about making a difference, explore our job listings below and join our dynamic team
+                in shaping the future of education and technology!</p>
+
+              
+        </div>
+    </section>
+    <section class="company-intro">
+        <div class="intro-content">
+            <h2>Current Job Openings at Totelligence :</h2>
+            
+              
+        </div>
+    </section>
+    <section class="job-openings">
+       
+        <div class="job-opening">
+            <h2><a href="#job1">Stipend Based Project Development Intern (4 Vacancies)</a></h2>
+        </div>
+        <div class="job-opening">
+            <h2><a href="#job2">Project Development Team (6 Vacancies)</a></h2>
+        </div>
+        <div class="job-opening">
+            <h2><a href="#job3">Graphic Designer (2 Vacancies)</a></h2>
+        </div>
+        <div class="job-opening">
+            <h2><a href="#job4">Video Editor (1 Vacancy)</a></h2>
+        </div>
+        <div class="job-opening">
+            <h2><a href="#job5">Full Stack Web Developer (1 Vacancy)</a></h2>
+        </div>
+        <div class="job-opening">
+            <h2><a href="#job6">PR & Outreach (2 Vacancies)</a></h2>
+        </div>
+        <div class="job-opening">
+            <h2><a href="#job7">Content Writers (2 Vacancies)</a></h2>
+        </div>
+        <div class="job-opening">
+            <h2><a href="#job8">Mentors (5 Vacancies)</a></h2>
+        </div>
+    </section>
+    
+
+    <!-- Careers Section Styles -->
+    <section class="careers">
+        <div class="job-posting" id="job1">
+            <h2>Stipend Based Project Development Intern (4 Vacancies) (Stipend Upto 10K INR)</h2>
+            <h3>a. Frontend Developer with React.js:</h3>
+            <p><b>Position Overview</b>: As a Frontend Developer, you will be responsible for creating user interfaces
+                using React.js.</p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Design and develop user interfaces using React.js.</li>
+                <li>Write clean and maintainable code in HTML, CSS, and JavaScript.</li>
+                <li>Implement state management using libraries like Redux.</li>
+                <li>Integrate with RESTful APIs to fetch and display data.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Strong knowledge of React.js for building user interfaces.</li>
+                <li>Proficiency in HTML, CSS, and JavaScript.</li>
+                <li>Experience with state management libraries (e.g., Redux).</li>
+                <li>Understanding of RESTful APIs.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <br>
+
+            <h3>b. Backend Developer with Node.js and Express.js:</h3>
+            <p><b>Position Overview</b>: Join our team as a Backend Developer specializing in Node.js and Express.js.
+            </p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Develop and maintain server-side applications using Node.js.</li>
+                <li>Create APIs and handle server-side programming tasks.</li>
+                <li>Utilize Express.js for building web applications.</li>
+                <li>Database management and integration (knowledge of databases is a plus).</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in Node.js for backend development.</li>
+                <li>Understanding of server-side programming and APIs.</li>
+                <li>Experience with Express.js for building web applications.</li>
+                <li>Database knowledge is a plus.</li>
+            </ul>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <br>
+
+            <h3>c. Database Handler with MongoDB & Firebase Authentication:</h3>
+            <p><b>Position Overview</b>: Join our team as a Database Handler with expertise in MongoDB and Firebase
+                Authentication.</p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Manage and maintain databases using MongoDB.</li>
+                <li>Implement user authentication using Firebase.</li>
+                <li>Backend scripting and automation (backend scripting skills are a plus).</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Experience with MongoDB for database management.</li>
+                <li>Authentication knowledge using Firebase.</li>
+                <li>Backend scripting skills a plus.</li>
+            </ul>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <br>
+
+            <h3>d. MERN Stack Developer:</h3>
+            <p><b>Position Overview</b>: Join our team as a MERN Stack Developer with expertise in React.js, Node.js,
+                MongoDB, Express.js, and Firebase.</p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Work with MERN stack technologies to develop web applications.</li>
+                <li>Utilize React.js, Node.js, MongoDB, Express.js, and Firebase for full-stack development.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in MERN stack technologies.</li>
+                <li>Knowledge of React.js, Node.js, MongoDB, Express.js, and Firebase.</li>
+                <li>Experience in full-stack development.</li>
+            </ul>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <br>
+
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+
+        <div class="job-posting" id="job2">
+            <h2>Project Development Team (6 Vacancies)</h2>
+
+            <h3>a. Web Development - 2</h3>
+            <p><b>Position Overview</b>: Join our Web Development team and work on creating dynamic web applications.
+            </p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Develop web applications using HTML, CSS, JavaScript, and frontend frameworks.</li>
+                <li>Collaborate with backend developers to integrate frontend and backend services.</li>
+                <li>Ensure responsive and user-friendly web designs.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in HTML, CSS, and JavaScript.</li>
+                <li>Knowledge of frontend frameworks like React, Angular, or Vue.js.</li>
+                <li>Experience with backend technologies such as Node.js or PHP.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 2</p>
+            <br>
+
+            <h3>b. AI Based - 2</h3>
+            <p><b>Position Overview</b>: Join our team as an AI-Based Developer with a focus on artificial intelligence
+                and machine learning.</p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Apply artificial intelligence and machine learning concepts to solve problems.</li>
+                <li>Write code in languages like Python, R, or Java for AI/ML applications.</li>
+                <li>Work with AI/ML frameworks such as TensorFlow or PyTorch.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Understanding of artificial intelligence and machine learning concepts.</li>
+                <li>Programming skills in languages like Python, R, or Java.</li>
+                <li>Experience with AI/ML frameworks like TensorFlow or PyTorch.</li>
+            </ul>
+            <p><b>No. of Vacancies</b>: 2</p>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <br>
+
+            <h3>c. Java Spring Boot - 2</h3>
+            <p><b>Position Overview</b>: Join our team as a Java Spring Boot Developer, specializing in Java application
+                development.</p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Develop Java applications using the Spring Boot framework.</li>
+                <li>Create RESTful APIs and backend services.</li>
+                <li>Ensure efficient API development following best practices.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in the Java programming language.</li>
+                <li>Experience with the Spring Boot framework for building Java applications.</li>
+                <li>Knowledge of RESTful API development.</li>
+            </ul>
+            <p><b>No. of Vacancies</b>: 2</p>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <br>
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+
+        <div class="job-posting" id="job3">
+            <h2>Graphic Designer (2 Vacancies)</h2>
+
+            <h3>a. Graphic Designer with Photoshop</h3>
+            <p><b>Position Overview</b>: Join our Graphic Design team and create visually stunning graphics using
+                Photoshop.</p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Create graphics, illustrations, and designs using Adobe Photoshop.</li>
+                <li>Work on various design projects, including marketing materials and web graphics.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in Adobe Photoshop for general graphic design.</li>
+                <li>Experience in using various editing tools.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <br>
+
+            <h3>b. UI/UX Designer (Canva and other editing tools)</h3>
+            <p><b>Position Overview</b>: Join our team as a UI/UX Designer with expertise in Canva and other editing
+                tools.</p>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Create visually appealing user interfaces and user experience designs using Canva and other editing
+                    tools.</li>
+                <li>Work on UI/UX design projects.</li>
+                <li>Additional skills in Figma and Illustrator are a plus.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in Canva and other editing tools.</li>
+                <li>Experience in UI/UX design.</li>
+                <li>Additional skills in Figma and Illustrator are a plus.</li>
+            </ul>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <br>
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+
+        <div class="job-posting" id="job4">
+            <h2>Video Editor (1 Vacancy)</h2>
+
+            <h3><b>Position Overview</b>: Join our Video Editing team and create engaging videos using Adobe Premiere
+                Pro and After Effects.</h3>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Edit videos using Adobe Premiere Pro for video editing.</li>
+                <li>Create motion graphics using Adobe After Effects.</li>
+                <li>Perform video post-production, including color correction and audio editing.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in Adobe Premiere Pro for video editing.</li>
+                <li>Experience in using Adobe After Effects for motion graphics.</li>
+                <li>Strong skills in video post-production, including color correction and audio editing.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <br>
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+
+        <div class="job-posting" id="job5">
+            <h2>Full Stack Web Developer (1 Vacancy)</h2>
+
+            <h3><b>Position Overview</b>: Join our Full Stack Web Development team and work on end-to-end web
+                applications.</h3>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Develop user interfaces using React.js and frontend technologies.</li>
+                <li>Build backend services using Node.js and Express.js.</li>
+                <li>Manage databases with MongoDB and implement RESTful APIs.</li>
+                <li>Participate in server-side scripting and backend development.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Proficiency in frontend technologies like HTML, CSS, and JavaScript.</li>
+                <li>Experience with React.js for building user interfaces.</li>
+                <li>Strong knowledge of backend technologies such as Node.js and Express.js.</li>
+                <li>Database management skills with MongoDB.</li>
+                <li>Understanding of RESTful APIs.</li>
+                <li>Experience in server-side scripting with Python or other languages is a plus.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 1</p>
+            <br>
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+
+        <div class="job-posting" id="job6">
+            <h2>PR & Outreach (2 Vacancies)</h2>
+
+            <h3><b>Position Overview</b>: Join our PR & Outreach team and help us maintain positive relationships with
+                stakeholders.</h3>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Utilize strong communication and interpersonal skills to engage with stakeholders.</li>
+                <li>Create and maintain positive relationships with stakeholders.</li>
+                <li>Assist in public relations, outreach, or marketing efforts.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Strong communication and interpersonal skills.</li>
+                <li>Ability to create and maintain positive relationships with stakeholders.</li>
+                <li>Experience in public relations, outreach, or marketing is a plus.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 2</p>
+            <br>
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+
+        <div class="job-posting" id="job7">
+            <h2>Content Writers (2 Vacancies)</h2>
+
+            <h3><b>Position Overview</b>: Join our Content Writing team and create engaging and informative content.
+            </h3>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Use excellent writing skills to create content across various topics.</li>
+                <li>Conduct research to gather information for content creation.</li>
+                <li>Create SEO-friendly content.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Excellent writing skills and proficiency in the English language.</li>
+                <li>Ability to create engaging and informative content across various topics.</li>
+                <li>Research skills to gather information for content creation.</li>
+                <li>Experience in SEO content writing is a plus.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 2</p>
+            <br>
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+
+        <div class="job-posting" id="job8">
+            <h2>Mentors (5 Vacancies)</h2>
+
+            <h3><b>Position Overview</b>: We are seeking dedicated mentors who are passionate about sharing their
+                knowledge and expertise in various areas, including Java, Python, Machine Learning, Web Development,
+                Projects, Prompotengineering, and Computer Science.</h3>
+            <p><b>Responsibilities</b>:</p>
+            <ul>
+                <li>Provide one-on-one or group mentoring sessions to guide and support learners.</li>
+                <li>Help learners with understanding core concepts, problem-solving, and project development.</li>
+                <li>Assist in curriculum development and content creation for mentoring sessions.</li>
+                <li>Offer feedback and guidance to help learners improve their skills.</li>
+            </ul>
+            <p><b>Skills Required</b>:</p>
+            <ul>
+                <li>Expertise in at least one of the mentioned areas: Java, Python, Machine Learning, Web Development,
+                    Projects, Prompotengineering, or Computer Science.</li>
+                <li>Strong communication and teaching skills.</li>
+                <li>Passion for mentoring and helping others learn and grow.</li>
+            </ul>
+            <p><b>Location</b>: Flexible (Remote)</p>
+            <p><b>No. of Vacancies</b>: 5</p>
+            <br>
+            <center><button><a href="#">Apply Now</a></button></center>
+        </div>
+    </section>
+
+
+
+
+    <section class="home">
+        <div class="content">
+            <center>
+                <h3>Checkout our Domains</h3>
+            </center>
+        </div>
+    </section>
+    <!-- categories section starts  -->
+
+    <section class="category">
+
+        <a href="index.html" class="box">
+            <img src="images/data-science.png" alt="">
+            <h3>Data Science</h3>
+        </a>
+
+        <a href="index.html" class="box">
+            <img src="images/app-development.png" alt="">
+            <h3>App Development</h3>
+        </a>
+
+        <a href="index.html" class="box">
+            <img src="images/coding.png" alt="">
+            <h3>Machine Learning</h3>
+        </a>
+
+        <a href="index.html" class="box">
+            <img src="images/world-wide-web.png" alt="">
+            <h3>Web Development</h3>
+        </a>
+    </section>
+
+    <!-- categories section ends -->
+    <section class="home">
+        <div class="content">
+            <center>
+                <h3>Connect us on Social Media</h3>
+            </center>
+        </div>
+    </section>
+    <section class="category">
+        <a href="https://chat.whatsapp.com/KOEXq3XACme69qVoYJJOkk" class="box" target="_blank">
+            <img src="images/whatsapp.png" alt="">
+            <h3>WhatsApp Community</h3>
+        </a>
+        <a href="https://www.instagram.com/totelligencesolutions/" class="box" target="_blank">
+            <img src="images/instagram.avif" alt="">
+            <h3>Instagram Account</h3>
+        </a>
+        <a href="https://www.linkedin.com/company/totelligence/" class="box" target="_blank">
+            <img src="images/linkedin.png" alt="">
+            <h3>LinkedIn Page</h3>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100094706094209" class="box" target="_blank">
+            <img src="images/facebook.png" alt="">
+            <h3>Facebook Page</h3>
+        </a>
+    </section>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Explore</h3>
+                <a href="index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="teachers.html"> <i class="fas fa-arrow-right"></i> Team </a>
+                <a href="notifications.html"> <i class="fas fa-arrow-right"></i> Notifications </a>
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact Us </a>
+            </div>
+
+            <div class="box">
+                <h3>Courses</h3>
+                <a href="courses.html"> <i class="fas fa-arrow-right"></i> Courses</a>
+                <a href="java.html"> <i class="fas fa-arrow-right"></i> Java</a>
+                <a href="python.html"> <i class="fas fa-arrow-right"></i> Python</a>
+                <a href="webdevelopment.html"> <i class="fas fa-arrow-right"></i> Web Development</a>
+            </div>
+
+            <div class="box">
+                <h3>Live Projects</h3>
+                <a href="https://bit.ly/MicroServices-Part1"> <i class="fas fa-arrow-right"></i> Java Projects </a>
+                <a href="https://bit.ly/Ml-Project-using-AmazonSagemaker"> <i class="fas fa-arrow-right"></i> Machine
+                    Learning Projects
+                </a>
+                <a href="https://bit.ly/Appwrite-todo-authapp"> <i class="fas fa-arrow-right"></i> Web Development
+                    Projects </a>
+                <a href="https://youtube.com/@tutorialswithsanju"> <i class="fas fa-arrow-right"></i> Video Sessions</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=100094706094209"> <i class="fab fa-facebook"></i>
+                    Facebook </a>
+                <a href="https://www.linkedin.com/company/totelligence/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="https://www.instagram.com/totelligencesolutions/"> <i class="fab fa-instagram"></i> instagram
+                </a>
+                <a href="https://github.com/ManyamSanjayKumarReddy"> <i class="fab fa-github"></i> github </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> Created and maintained by<span> Totelligence Team</span> Copyright &copy; | All Rights
+            Reserved! </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

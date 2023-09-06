@@ -91,7 +91,7 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
-        
+
 
         .job-posting h2 {
             font-size: 26px;
@@ -151,104 +151,122 @@
             }
         }
 
-/* Job Openings Section Styles */
-.job-openings {
-    background-color: #f0f0f0;
-    padding: 10px; /* Reduced padding */
-    margin: 10px; /* Reduced margin */
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-wrap: wrap; /* Wrap job openings to the next row */
-    justify-content: flex-start; /* Distribute job openings horizontally */
-}
+        /* Job Openings Section Styles */
+        .job-openings {
+            background-color: #f0f0f0;
+            padding: 10px;
+            /* Reduced padding */
+            margin: 10px;
+            /* Reduced margin */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            /* Wrap job openings to the next row */
+            justify-content: flex-start;
+            /* Distribute job openings horizontally */
+        }
 
-.job-opening {
-    width: calc(33.33% - 10px); /* Each job opening takes up 33.33% of the container width */
-    margin-bottom: 10px; /* Reduced margin */
-    padding: 10px; /* Reduced padding */
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    display: inline-block; /* Display job openings inline */
-    box-sizing: border-box;
-    vertical-align: top;
-    margin: 5px;
-}
+        .job-opening {
+            width: calc(33.33% - 10px);
+            /* Each job opening takes up 33.33% of the container width */
+            margin-bottom: 10px;
+            /* Reduced margin */
+            padding: 10px;
+            /* Reduced padding */
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: inline-block;
+            /* Display job openings inline */
+            box-sizing: border-box;
+            vertical-align: top;
+            margin: 5px;
+        }
 
-.job-opening:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+        .job-opening:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-.job-opening h2 {
-    font-size: 18px; /* Reduced font size for h2 */
-    margin-bottom: 4px; /* Further reduced margin */
-    color: #333;
-}
+        .job-opening h2 {
+            font-size: 18px;
+            /* Reduced font size for h2 */
+            margin-bottom: 4px;
+            /* Further reduced margin */
+            color: #333;
+        }
 
-.job-opening h3 {
-    font-size: 18px; /* Reduced font size for h3 */
-    margin-top: 6px; /* Further reduced margin */
-    color: #555;
-}
+        .job-opening h3 {
+            font-size: 18px;
+            /* Reduced font size for h3 */
+            margin-top: 6px;
+            /* Further reduced margin */
+            color: #555;
+        }
 
-.job-opening ul {
-    list-style: disc;
-    margin-left: 10px; /* Reduced margin */
-    margin-bottom: 6px; /* Further reduced margin */
-    font-size: 14px; /* Reduced font size for ul */
-}
+        .job-opening ul {
+            list-style: disc;
+            margin-left: 10px;
+            /* Reduced margin */
+            margin-bottom: 6px;
+            /* Further reduced margin */
+            font-size: 14px;
+            /* Reduced font size for ul */
+        }
 
-.job-opening p {
-    margin-top: 6px; /* Further reduced margin */
-    font-size: 16px; /* Reduced font size for p */
-}
+        .job-opening p {
+            margin-top: 6px;
+            /* Further reduced margin */
+            font-size: 16px;
+            /* Reduced font size for p */
+        }
 
-.job-opening a {
-    text-decoration: none;
-    color: #3498db;
-    font-weight: bold;
-    transition: color 0.2s ease;
-}
+        .job-opening a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.2s ease;
+        }
 
-.job-opening a:hover {
-    color: #258cd1;
-}
+        .job-opening a:hover {
+            color: #258cd1;
+        }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .job-opening {
-        width: 100%; /* Full width on smaller screens */
-        margin-right: 0;
-    }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .job-opening {
+                width: 100%;
+                /* Full width on smaller screens */
+                margin-right: 0;
+            }
 
-    .job-openings {
-        justify-content: flex-start; /* Reset justify-content for smaller screens */
-    }
+            .job-openings {
+                justify-content: flex-start;
+                /* Reset justify-content for smaller screens */
+            }
 
-    .job-opening h2 {
-        font-size: 18px; /* Reduced font size for h2 on smaller screens */
-    }
+            .job-opening h2 {
+                font-size: 18px;
+                /* Reduced font size for h2 on smaller screens */
+            }
 
-    .job-opening h3 {
-        font-size: 16px; /* Reduced font size for h3 on smaller screens */
-    }
+            .job-opening h3 {
+                font-size: 16px;
+                /* Reduced font size for h3 on smaller screens */
+            }
 
-    .job-opening ul {
-        font-size: 14px; /* Reduced font size for ul on smaller screens */
-    }
+            .job-opening ul {
+                font-size: 14px;
+                /* Reduced font size for ul on smaller screens */
+            }
 
-    .job-opening p {
-        font-size: 14px; /* Reduced font size for p on smaller screens */
-    }
-}
-
-
-
-
-
+            .job-opening p {
+                font-size: 14px;
+                /* Reduced font size for p on smaller screens */
+            }
+        }
     </style>
 </head>
 
@@ -280,7 +298,7 @@
                     </ul>
                 </li>
 
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -297,18 +315,18 @@
             <p>If you're passionate about making a difference, explore our job listings below and join our dynamic team
                 in shaping the future of education and technology!</p>
 
-              
+
         </div>
     </section>
     <section class="company-intro">
         <div class="intro-content">
             <h2>Current Job Openings at Totelligence :</h2>
-            
-              
+
+
         </div>
     </section>
     <section class="job-openings">
-       
+
         <div class="job-opening">
             <h2><a href="#job1">Stipend Based Project Development Intern (4 Vacancies)</a></h2>
         </div>
@@ -334,14 +352,14 @@
             <h2><a href="#job8">Mentors (5 Vacancies)</a></h2>
         </div>
     </section>
-    
+
 
     <!-- Careers Section Styles -->
     <section class="careers">
         <div class="job-posting" id="job1">
             <h2>Stipend Based Project Development Intern (4 Vacancies) (Stipend Upto 10K INR)</h2>
             <h3>a. Frontend Developer with React.js:</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Strong knowledge of React.js for building user interfaces.</li>
@@ -354,7 +372,7 @@
             <br>
 
             <h3>b. Backend Developer with Node.js and Express.js:</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in Node.js for backend development.</li>
@@ -367,7 +385,7 @@
             <br>
 
             <h3>c. Database Handler with MongoDB & Firebase Authentication:</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Experience with MongoDB for database management.</li>
@@ -379,7 +397,7 @@
             <br>
 
             <h3>d. MERN Stack Developer:</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in MERN stack technologies.</li>
@@ -397,7 +415,7 @@
             <h2>Project Development Team (6 Vacancies)</h2>
 
             <h3>a. Web Development - 2</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in HTML, CSS, and JavaScript.</li>
@@ -409,7 +427,7 @@
             <br>
 
             <h3>b. AI Based - 2</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Understanding of artificial intelligence and machine learning concepts.</li>
@@ -421,7 +439,7 @@
             <br>
 
             <h3>c. Java Spring Boot - 2</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in the Java programming language.</li>
@@ -438,7 +456,7 @@
             <h2>Graphic Designer (2 Vacancies)</h2>
 
             <h3>a. Graphic Designer with Photoshop</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in Adobe Photoshop for general graphic design.</li>
@@ -449,7 +467,7 @@
             <br>
 
             <h3>b. UI/UX Designer (Canva and other editing tools)</h3>
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in Canva and other editing tools.</li>
@@ -465,7 +483,7 @@
         <div class="job-posting" id="job4">
             <h2>Video Editor (1 Vacancy)</h2>
 
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in Adobe Premiere Pro for video editing.</li>
@@ -481,7 +499,7 @@
         <div class="job-posting" id="job5">
             <h2>Full Stack Web Developer (1 Vacancy)</h2>
 
-           
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Proficiency in frontend technologies like HTML, CSS, and JavaScript.</li>
@@ -500,7 +518,7 @@
         <div class="job-posting" id="job6">
             <h2>PR & Outreach (2 Vacancies)</h2>
 
-            
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Strong communication and interpersonal skills.</li>
@@ -516,7 +534,7 @@
         <div class="job-posting" id="job7">
             <h2>Content Writers (2 Vacancies)</h2>
 
-            
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Excellent writing skills and proficiency in the English language.</li>
@@ -533,8 +551,8 @@
         <div class="job-posting" id="job8">
             <h2>Mentors (5 Vacancies)</h2>
 
-          
-        
+
+
             <p><b>Skills Required</b>:</p>
             <ul>
                 <li>Expertise in at least one of the mentioned areas: Java, Python, Machine Learning, Web Development,

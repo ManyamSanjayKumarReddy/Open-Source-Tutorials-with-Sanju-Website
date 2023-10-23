@@ -46,23 +46,23 @@
     }
     .corner-text {
     position: absolute;
-    top: 20px; /* Adjust this value to position the text inside the div */
-    right: 20px; /* Adjust this value to position the text inside the div */
-    padding: 8px 15px;
-    background-color: #ff7f50; /* Adjust the background color as needed */
-    color: white; /* Adjust the text color as needed */
-    z-index: 1; /* Ensures the text is on top of the content */
-    font-weight: bold; /* Adjust the font weight as needed */
-    font-size: 18px; /* Adjust the font size as needed */
-    border-radius: 5px; /* Add rounded corners */
-    letter-spacing: 1px; /* Adjust the letter spacing for better visibility */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.1); /* Add a light shadow */
-    transition: all 0.3s ease; /* Add smooth transition effect */
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #ff7f50;
+    color: white;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 14px; /* Adjust the font size as needed */
+    border-radius: 5px;
+    letter-spacing: 1px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .corner-text:hover {
-    background-color: #ff6347; /* Adjust the background color on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 0, 0, 0.3); /* Adjust the shadow on hover */
+    background-color: #ff6347;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .course-2 {
     display: flex;
@@ -79,10 +79,34 @@
 .image img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
+    object-fit: cover; /* Ensures the image covers the entire container */
 }
 
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .image img {
+        max-width: 80%; /* Adjust the width as needed */
+        height: auto;
+    }
+}
 
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.images-container img {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 5px;
+  margin-right: 2px; 
+}
+
+.images-container img:last-child {
+  margin-right: 0; 
+}
 
 @keyframes fadeIn {
     0% {
@@ -144,6 +168,8 @@
     <div class="readmorebox" style="position: relative; padding: 20px;">
         <!-- <img src="images/django.jpg" alt="" class="corner-image"> -->
         <div class="corner-text">Placement Assistance</div>
+        <br>
+        <br>
         
         <h3>Course Name: <b>Python for Developers</b></h3>
         <br>
@@ -219,14 +245,20 @@
         <h3>Mentors:</h3>
         <p>Gopal, Research Intern at Multicoreware (MCW)</p>
         <p>S Jaswanth, Intern at Dhruv Technologies</p>
-    
-        <h3>Supporting Team:</h3>
-        <p>Prudhvi</p>
+        <p>Prudhvi, Intern at Dhruv Technologies</p>
+
+        <div class="images-container">
+            <img src="images/asssignments.png" alt="Image 1">
+            <img src="images/internship.png" alt="Image 1">
+            <img src="images/certificate.png" alt="Image 1">
+            <img src="images/question.png" alt="Image 1">
+        </div>
+     
     
         <section class="course-2">
             <div class="box">
                 <div class="image">
-                    <img src="images/Testing.png" alt="">
+                    <img src="images/Course Payment Portal Advanced Pytthon.png" alt="">
                 </div>         
             </div>
         </section>

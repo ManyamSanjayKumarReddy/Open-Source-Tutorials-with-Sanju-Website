@@ -85,9 +85,16 @@
 
 /* Adjustments for mobile view */
 @media (max-width: 768px) {
-    .image img {
-        max-width: 80%; /* Adjust the width as needed */
+    #image-box {
+        display: none;
+    }
+
+    #mobile-image {
+        display: block;
+        width: 100%; /* Adjust the width as needed */
         height: auto;
+        border-radius: 10px;
+        object-fit: cover; /* Ensures the image covers the entire container */
     }
 }
 
@@ -256,16 +263,25 @@
      
     
         <section class="course-2">
-            <div class="box">
+            <div class="box" id="image-box">
                 <div class="image">
-                    <img src="images/Course Payment Portal Advanced Pytthon.png" alt="">
+                    <img src="images/Course Payment Portal Advanced Pytthon.png" alt="" id="main-image">
+                    <img src="images/Python thumb.png" alt="" id="mobile-image" style="display: none;">
                 </div>         
             </div>
         </section>
+        
     
         
-        <center><a href="" class="btn btn animated-buttons">Join the Waiting List</a></center>
+        <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3gzSriY7Iwk2Hko919XuMq6Zk5jrb-BLHBGQHFopGmvbziw/viewform" class="btn btn animated-buttons" target="_blank">Register Now</a></center>
+
+        <br>
+        <!-- <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uhnp1jM1mrw?si=Xoncer7-2KOWhIr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </center>> -->
+
     </div>
+    
     
    
 

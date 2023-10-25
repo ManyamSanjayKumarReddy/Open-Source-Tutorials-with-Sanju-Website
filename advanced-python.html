@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GZDMMZY2T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GZDMMZY2T"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-8GZDMMZY2T');
-</script>
+        gtag('config', 'G-8GZDMMZY2T');
+    </script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,326 +26,486 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1289363677038298"
-     crossorigin="anonymous"></script>
-   <style>
-.readmorebox {
-        animation: fadeIn 2s ease;
-    }
+        crossorigin="anonymous"></script>
+    <style>
+        .readmorebox {
+            animation: fadeIn 2s ease;
+        }
 
-    .btn {
-        display: inline-block;
-        padding: 10px 20px;
-        margin-top: 20px;
-        background-color: #ff7f50; /* Coral color */
-        color: white;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-    }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #ff7f50;
+            /* Coral color */
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-    .btn:hover {
-        background-color: #ff6347; /* Tomato color */
-    }
-    .corner-text {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #ff7f50;
-    color: white;
-    z-index: 1;
-    font-weight: bold;
-    font-size: 14px; /* Adjust the font size as needed */
-    border-radius: 5px;
-    letter-spacing: 1px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
+        .btn:hover {
+            background-color: #ff6347;
+            /* Tomato color */
+        }
 
-.corner-text:hover {
-    background-color: #ff6347;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.course-2 {
+        .corner-text {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: #ff7f50;
+            color: white;
+            z-index: 1;
+            font-weight: bold;
+            font-size: 14px;
+            /* Adjust the font size as needed */
+            border-radius: 5px;
+            letter-spacing: 1px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .corner-text:hover {
+            background-color: #ff6347;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .course-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .box {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            /* Ensures the image covers the entire container */
+        }
+
+        /* Adjustments for mobile view */
+        @media (max-width: 768px) {
+            #image-box {
+                display: none;
+            }
+
+            #mobile-image {
+                display: block;
+                width: 100%;
+                /* Adjust the width as needed */
+                height: auto;
+                border-radius: 10px;
+                object-fit: cover;
+                /* Ensures the image covers the entire container */
+            }
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .images-container img {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            margin-right: 2px;
+        }
+
+        .images-container img:last-child {
+            margin-right: 0;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+.pricing-plans {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 30px;
+    align-items: flex-start; /* Align items to the top */
+    margin: 50px 0;
+    gap: 40px;
 }
 
-.box {
+.pricing-card {
+    width: 420px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 0 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
     position: relative;
-    max-width: 100%;
+    margin-bottom: 40px;
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover; /* Ensures the image covers the entire container */
+.pricing-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Adjustments for mobile view */
+.pricing-card h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pricing-card p {
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    text-align: center; /* Added to center the price */
+}
+
+.pricing-card ul {
+    margin-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.pricing-card li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.pricing-card li::before {
+    content: '\2605';
+    font-family: 'FontAwesome';
+    margin-right: 10px;
+    color: #ff7f50;
+}
+
+.pricing-card a.btn {
+    display: block;
+    width: 80%;
+    margin: 30px auto 0;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pricing-card a.btn:hover {
+    background-color: #ff6347;
+}
+
+.top-seller {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to bottom right, #ff7f50, #ff6347);
+    color: #fff;
+    padding: 5px 10px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.price {
+    font-size: 32px;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
-    #image-box {
-        display: none;
+    .pricing-card {
+        margin: 20px 0;
+    }
+    .pricing-card h3 {
+        font-size: 28px;
+    }
+    .pricing-card p {
+        font-size: 18px;
     }
 
-    #mobile-image {
-        display: block;
-        width: 100%; /* Adjust the width as needed */
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover; /* Ensures the image covers the entire container */
-    }
-}
-
-.images-container {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.images-container img {
-  width: 60px; 
-  height: 60px; 
-  border-radius: 5px;
-  margin-right: 2px; 
-}
-
-.images-container img:last-child {
-  margin-right: 0; 
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
+    .pricing-plans {
+        flex-wrap: wrap; /* Allow flex items to wrap for mobile devices */
     }
 }
 
-</style>
+    </style>
 
 </head>
+
 <body>
-    
-<!-- header section starts  -->
 
-<header class="header">
+    <!-- header section starts  -->
 
-    <a href="index.html" class="logo"> </i> Totelligence Solutions </a>
+    <header class="header">
 
-    <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="index.html" class="logo"> </i> Totelligence Solutions </a>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="projects.html">Projects</a></li>
+        <div id="menu-btn" class="fas fa-bars"></div>
 
-            <li><a href="#">Company +</a>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="teachers.html">Team</a></li>
-                    <li><a href="notifications.html">Notifications</a></li>
-                    <li><a href="terms and conditions.html">Terms and Conditions</a></li>
-                    <li><a href="pricacy.html">Privacy Policy</a></li>
-                    <li><a href="cancellation and refund policy.html">Refund Policy</a></li>
-                </ul>
-            </li>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="projects.html">Projects</a></li>
 
-            <li><a href="careers.html">Careers</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+                <li><a href="#">Company +</a>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="teachers.html">Team</a></li>
+                        <li><a href="notifications.html">Notifications</a></li>
+                        <li><a href="terms and conditions.html">Terms and Conditions</a></li>
+                        <li><a href="pricacy.html">Privacy Policy</a></li>
+                        <li><a href="cancellation and refund policy.html">Refund Policy</a></li>
+                    </ul>
+                </li>
 
-</header>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
 
-<!-- header section ends -->
+    </header>
 
-<section class="heading">
-    <h3>Advanced Python Crash Course</h3>
-    <p> <a href="index.html">Home >></a>Advanced Python Course </p>
-</section>
+    <!-- header section ends -->
 
-<!-- course-1 section starts  -->
+    <section class="heading">
+        <h3>Advanced Python Crash Course</h3>
+        <p> <a href="index.html">Home >></a>Advanced Python Course </p>
+    </section>
 
-<section class="course-1">
+    <!-- course-1 section starts  -->
 
-    <div class="readmorebox" style="position: relative; padding: 20px;">
-        <!-- <img src="images/django.jpg" alt="" class="corner-image"> -->
-        <div class="corner-text">Placement Assistance</div>
-        <br>
-        <br>
-        
-        <h3>Course Name: <b>Python for Developers</b></h3>
-        <br>
-        <h3>Course Curriculum:</h3>
-        <br>
-        
-        <b><p>1. Introduction to Git & Github</p></b>
-        <p>2. Installation and Setup of Git</p>
-        <p>3. Walkthrough on the Basic Commands of Git</p>
-        <p>4. Unlocking the Power of Git Command Line by Pushing a Project into Repository</p>
-        <p>5. Understanding more on Git Commands</p>
-        <b><p>6. Installation and setup of the required software for getting started with Python</p></b>
-        <p>7. Introduction of Python</p>
-        <p>8. Hello World in Python</p>
-        <p>9. String concepts in Python</p>
-        <p>10. List concepts in Python</p>
-        <p>11. Tuples in Python</p>
-        <p>12. Dictionaries and set in Python</p>
-        <p>13. Decision Control Statements and loops in Python</p>
-        <p>14. Python Functions</p>
-        <p>15. OOP's Concepts in Python</p>
-        <p>16. Working With Files in Python</p>
-        <p>17. Packages & Modules in Python</p>
-        <p>18. 5 Python Projects from Basic to Advanced</p>
-        <b><p>19. Introduction to Web Development with Python</p></b>
-        <p>20. Getting Deeper into the Python Backend Development with Python</p>
-        <p>21. Understanding the Mechanisim of Flask API's</p>
-        <b><p>22. Resume Building Sessions</p></b>
-        <b><p>23. Linkedin Profile Management Sessions</p></b>
-        <b><p>24. Guided Mini Project</p></b>
-        <b><p>25. Guided Major Project</p></b>
-        
-     
-        <h3>Course Features:</h3>
-    <!-- Updated course features -->
-    <p>1. Access to the Course materials</p>
-    <p>3. Weekly Quizzes and Assignments</p>
-    <p>4. Course completion certificate</p>
-    <p>5. 1:1 Doubt Clearing Sessions</p>
-    <p>6. Weekly Doubts Clarification Sessions</p>
-    <p>7. Stipend based Internship Opportunity based on the Performance (Up to 15k)</p>
-    <p>8. Lifetime access to the Course</p>
-    <p>9. Project Completion Certificate</p>
-    <p>10. Placement Assistance</p>
-    
-        <h3>Requirements:</h3>
-        <p>1. System with minimum i3 processor or better</p>
-        <p>2. At least 4 GB of RAM</p>
-        <p>3. Better internet connection</p>
-        <p>4. Dedication to learn</p>
-    
-        <h3>Mode of Teaching:</h3>
-        <p>Telugu</p>
-    
-        <h3>Classroom Type:</h3>
-        <p>Online</p>
-    
-        <h3>Timings:</h3>
-        <p>Mon, Wed, Friday: 9 pm to 11 pm</p>
-    
-        <h3>Start Date:</h3>
-        <p>November 1st 2023</p>
+    <section class="course-1">
 
-        <h3>Course Fee :</h3>
-        <b><p>INR 999/- Only</p></b>
-    
-        <h3>Course Duration:</h3>
-        <p>3 Months</p>
-    
-        <h3>Course Instructor:</h3>
-        <p>M Sanjay Kumar Reddy, CEO Totelligence</p>
-    
-        <h3>Mentors:</h3>
-        <p>Gopal, Research Intern at Multicoreware (MCW)</p>
-        <p>S Jaswanth, Intern at Dhruv Technologies</p>
-        <p>Prudhvi, Intern at Dhruv Technologies</p>
+        <div class="readmorebox" style="position: relative; padding: 20px;">
+            <!-- <img src="images/django.jpg" alt="" class="corner-image"> -->
+            <div class="corner-text">Placement Assistance</div>
+            <br>
+            <br>
 
-        <div class="images-container">
-            <img src="images/asssignments.png" alt="Image 1">
-            <!-- <img src="images/internship.png" alt="Image 1"> -->
-            <img src="images/certificate.png" alt="Image 1">
-            <!-- <img src="images/question.png" alt="Image 1"> -->
-            <img src="images/python image.png" alt="Image 1">
-            <img src="images/project.png" alt="Image 1">
-        </div>
-     
-    
-        <section class="course-2">
-            <div class="box" id="image-box">
-                <div class="image">
-                    <img src="images/Course Payment Portal Advanced Pytthon.png" alt="" id="main-image">
-                    <img src="images/Python thumb.png" alt="" id="mobile-image" style="display: none;">
-                </div>         
+            <h3>Course Name: <b>Python for Developers</b></h3>
+            <br>
+            <h3>Course Curriculum:</h3>
+            <br>
+
+            <b>
+                <p>1. Introduction to Git & Github</p>
+            </b>
+            <p>2. Installation and Setup of Git</p>
+            <p>3. Walkthrough on the Basic Commands of Git</p>
+            <p>4. Unlocking the Power of Git Command Line by Pushing a Project into Repository</p>
+            <p>5. Understanding more on Git Commands</p>
+            <b>
+                <p>6. Installation and setup of the required software for getting started with Python</p>
+            </b>
+            <p>7. Introduction of Python</p>
+            <p>8. Hello World in Python</p>
+            <p>9. String concepts in Python</p>
+            <p>10. List concepts in Python</p>
+            <p>11. Tuples in Python</p>
+            <p>12. Dictionaries and set in Python</p>
+            <p>13. Decision Control Statements and loops in Python</p>
+            <p>14. Python Functions</p>
+            <p>15. OOP's Concepts in Python</p>
+            <p>16. Working With Files in Python</p>
+            <p>17. Packages & Modules in Python</p>
+            <p>18. 5 Python Projects from Basic to Advanced</p>
+            <b>
+                <p>19. Introduction to Web Development with Python</p>
+            </b>
+            <p>20. Getting Deeper into the Python Backend Development with Python</p>
+            <p>21. Understanding the Mechanisim of Flask API's</p>
+            <b>
+                <p>22. Resume Building Sessions</p>
+            </b>
+            <b>
+                <p>23. Linkedin Profile Management Sessions</p>
+            </b>
+            <b>
+                <p>24. Guided Mini Project</p>
+            </b>
+            <b>
+                <p>25. Guided Major Project</p>
+            </b>
+
+
+            <h3>Course Features:</h3>
+            <!-- Updated course features -->
+            <p>1. Access to the Course materials</p>
+            <p>3. Weekly Quizzes and Assignments</p>
+            <p>4. Course completion certificate</p>
+            <p>5. 1:1 Doubt Clearing Sessions</p>
+            <p>6. Weekly Doubts Clarification Sessions</p>
+            <p>7. Stipend based Internship Opportunity based on the Performance (Up to 15k)</p>
+            <p>8. Lifetime access to the Course</p>
+            <p>9. Project Completion Certificate</p>
+            <p>10. Placement Assistance</p>
+
+            <h3>Requirements:</h3>
+            <p>1. System with minimum i3 processor or better</p>
+            <p>2. At least 4 GB of RAM</p>
+            <p>3. Better internet connection</p>
+            <p>4. Dedication to learn</p>
+
+            <h3>Mode of Teaching:</h3>
+            <p>Telugu</p>
+
+            <h3>Classroom Type:</h3>
+            <p>Online</p>
+
+            <h3>Timings:</h3>
+            <p>Mon, Wed, Friday: 9 pm to 11 pm</p>
+
+            <h3>Start Date:</h3>
+            <p>November 1st 2023</p>
+
+            <h3>Course Fee :</h3>
+            <b>
+                <p>INR 999/- Only</p>
+            </b>
+
+            <h3>Course Duration:</h3>
+            <p>3 Months</p>
+
+            <h3>Course Instructor:</h3>
+            <p>M Sanjay Kumar Reddy, CEO Totelligence</p>
+
+            <h3>Mentors:</h3>
+            <p>Gopal, Research Intern at Multicoreware (MCW)</p>
+            <p>S Jaswanth, Intern at Dhruv Technologies</p>
+            <p>Prudhvi, Intern at Dhruv Technologies</p>
+
+            <div class="images-container">
+                <img src="images/asssignments.png" alt="Image 1">
+                <!-- <img src="images/internship.png" alt="Image 1"> -->
+                <img src="images/certificate.png" alt="Image 1">
+                <!-- <img src="images/question.png" alt="Image 1"> -->
+                <img src="images/python image.png" alt="Image 1">
+                <img src="images/project.png" alt="Image 1">
             </div>
-        </section>
-        
-    
-        
-        <center><a href="https://docs.google.com/forms/d/e/1FAIpQLSe3gzSriY7Iwk2Hko919XuMq6Zk5jrb-BLHBGQHFopGmvbziw/viewform" class="btn btn animated-buttons" target="_blank">Register Now</a></center>
-
-        <br>
-        <!-- <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uhnp1jM1mrw?si=Xoncer7-2KOWhIr4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </center>> -->
-
-    </div>
-    
-    
-   
-
-
-</section>
-
-
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <h3>Explore</h3>
-            <a href="index.html"> <i class="fas fa-arrow-right"></i> Home </a>
-            <a href="teachers.html"> <i class="fas fa-arrow-right"></i> Team </a>
-            <a href="notifications.html"> <i class="fas fa-arrow-right"></i> Notifications </a>            
-            <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact Us </a>
-        </div>
-
-        <div class="box">
-            <h3>Courses</h3>
-            <a href="courses.html"> <i class="fas fa-arrow-right"></i> Courses</a>
-            <a href="java.html"> <i class="fas fa-arrow-right"></i> Java</a>
-            <a href="python.html"> <i class="fas fa-arrow-right"></i> Python</a>
-            <a href="webdevelopment.html"> <i class="fas fa-arrow-right"></i> Web Development</a>   
-        </div>
-
-        <div class="box">
-            <h3>Live Projects</h3>
-            <a href="https://bit.ly/MicroServices-Part1"> <i class="fas fa-arrow-right"></i> Java Projects </a>
-            <a href="https://bit.ly/Ml-Project-using-AmazonSagemaker"> <i class="fas fa-arrow-right"></i> Machine Learning Projects
-            </a>
-            <a href="https://bit.ly/Appwrite-todo-authapp"> <i class="fas fa-arrow-right"></i> Web Development Projects </a>
-            <a href="https://youtube.com/@tutorialswithsanju"> <i class="fas fa-arrow-right"></i> Video Sessions</a>
-            
-        </div>
-
-        <div class="box">
-            <h3>Follow us</h3>
            
-            <a href="https://www.facebook.com/profile.php?id=100094706094209"> <i class="fab fa-facebook"></i> Facebook </a>
-            <a href="https://www.linkedin.com/company/totelligence/"> <i
-                    class="fab fa-linkedin"></i> linkedin </a>
-            <a href="https://www.instagram.com/totelligencesolutions/"> <i class="fab fa-instagram"></i> instagram
-            </a>
-            <a href="https://github.com/ManyamSanjayKumarReddy"> <i class="fab fa-github"></i> github </a>
+
+            <section class="pricing-plans">
+                <div class="pricing-card">
+                    <div class="top-seller">Top Seller</div>
+                    <h3>Diamond Plan</h3>
+                    <p>This plan includes:</p>
+                    <ul>
+                        <li>Version Controlling with Git and Github</li>
+                        <li>Advanced Python Course</li>
+                        <li>Intro to Web Development with Python</li>
+                        <li>5+ Advanced Python Projects</li>
+                        <li>Guided Mini + major Project</li>
+                        <li>Linkedin Profile Management</li>
+                        <li>Weekly Doubts Sessions</li>
+                        <li>Quizzes and Assignments</li>
+                        <li>Access to the Course for 1 year</li>
+                    </ul>
+                    <p>Price: ₹499/-</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3gzSriY7Iwk2Hko919XuMq6Zk5jrb-BLHBGQHFopGmvbziw/viewform" class="btn" target="_blank">Choose Plan</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Platinum Plan</h3>
+                    <p>This plan includes:</p>
+                    <ul>
+                        <li>All the Plans in the Diamond Plan</li>
+                        <li>1:1 Doubt Clarifying Sessions</li>
+                        <li>Internship Opportunity after the course Completion</li>
+                        <li>Lifetime Course Access</li>
+                        <li>24/7 Doubt Support</li>
+                        <li>Placement Assistance</li>
+                    </ul>
+                    <p>Price: ₹999/-</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3gzSriY7Iwk2Hko919XuMq6Zk5jrb-BLHBGQHFopGmvbziw/viewform" class="btn" target="_blank">Choose Plan</a>
+                </div>
+            </section>
+            
+
+            <section class="course-2">
+                <div class="box" id="image-box">
+                    <div class="image">
+                        <img src="images/Course Payment Portal Advanced Pytthon.png" alt="" id="main-image">
+                        <img src="images/Python thumb.png" alt="" id="mobile-image" style="display: none;">
+                    </div>
+                </div>
+            </section>
+
+            </div>
+
+    </section>
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Explore</h3>
+                <a href="index.html"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="teachers.html"> <i class="fas fa-arrow-right"></i> Team </a>
+                <a href="notifications.html"> <i class="fas fa-arrow-right"></i> Notifications </a>
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i> Contact Us </a>
+            </div>
+
+            <div class="box">
+                <h3>Courses</h3>
+                <a href="courses.html"> <i class="fas fa-arrow-right"></i> Courses</a>
+                <a href="java.html"> <i class="fas fa-arrow-right"></i> Java</a>
+                <a href="python.html"> <i class="fas fa-arrow-right"></i> Python</a>
+                <a href="webdevelopment.html"> <i class="fas fa-arrow-right"></i> Web Development</a>
+            </div>
+
+            <div class="box">
+                <h3>Live Projects</h3>
+                <a href="https://bit.ly/MicroServices-Part1"> <i class="fas fa-arrow-right"></i> Java Projects </a>
+                <a href="https://bit.ly/Ml-Project-using-AmazonSagemaker"> <i class="fas fa-arrow-right"></i> Machine
+                    Learning Projects
+                </a>
+                <a href="https://bit.ly/Appwrite-todo-authapp"> <i class="fas fa-arrow-right"></i> Web Development
+                    Projects </a>
+                <a href="https://youtube.com/@tutorialswithsanju"> <i class="fas fa-arrow-right"></i> Video Sessions</a>
+
+            </div>
+
+            <div class="box">
+                <h3>Follow us</h3>
+
+                <a href="https://www.facebook.com/profile.php?id=100094706094209"> <i class="fab fa-facebook"></i>
+                    Facebook </a>
+                <a href="https://www.linkedin.com/company/totelligence/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="https://www.instagram.com/totelligencesolutions/"> <i class="fab fa-instagram"></i> instagram
+                </a>
+                <a href="https://github.com/ManyamSanjayKumarReddy"> <i class="fab fa-github"></i> github </a>
+            </div>
+
         </div>
 
-    </div>
+        <div class="credit"> Created and maintained by<span> Totelligence Team</span> Copyright &copy; | All Rights
+            Reserved! </div>
 
-    <div class="credit"> Created and maintained by<span> Totelligence Team</span> Copyright &copy; | All Rights
-        Reserved! </div>
-
-</section>
+    </section>
 
 
-<!-- footer section ends -->
+    <!-- footer section ends -->
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
